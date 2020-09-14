@@ -13,11 +13,12 @@ p {
 }
 
 img {
-
+  width: 512px;
+  height: 256px;
 }
 
 ol{
-
+  background-color: firebrick;
 }
 
 ul {
