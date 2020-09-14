@@ -1,0 +1,72 @@
+body {
+  background-color: yellowgreen;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+img {
+
+}
+
+ol{
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  background-color: firebrick;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  backgorund-color: #555;
+  color: white;
+}
+
+table, th, td {
+  border: 2px solid firebrick;
+}
+
+#cars {
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#cars td, #cars th {
+  border: 2px solid whitesmoke;
+  padding: 6px;
+}
+
+#cars tr:nth-child(even) {
+  background-color:#f1f1f1;
+}
+
+#cars tr:hover {
+  background-color: #ddd;
+}
+
+#cars th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
