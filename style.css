@@ -1,5 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header ."
+    "Nav Yikes Nicki ."
+    "Nav Yikes Nicki ."
+    "Footer Footer Footer .";
+}
+
 body {
-  background-color: goldenrod;
+  background-color: darkorange;
 }
 
 h1 {
@@ -18,15 +30,15 @@ img {
 }
 
 ol{
-  background-color: firebrick;
+  background-color: white;
 }
 
 ul {
+  background-color: yellow;
   list-style-type: none;
+  width: 170px;
   margin: 0;
   padding: 0;
-  width: 170px;
-  background-color: firebrick;
 }
 
 li a {
@@ -37,12 +49,13 @@ li a {
 }
 
 li a:hover {
-  backgorund-color: #555;
+  background-color: #555;
   color: white;
 }
 
 table, th, td {
   border: 2px solid firebrick;
+  text-align: center;
 }
 
 #cars {
@@ -67,7 +80,78 @@ table, th, td {
 #cars th {
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: left;
-  background-color: blue;
-  color: white;
+  text-align: center;
+  background-color: lightskyblue;
+  color: mediumslateblue;
+}
+
+.Header { grid-area: Header; color: firebrick; text-align: center; background-color: mediumslateblue;}
+
+.Footer { grid-area: Footer; background-color: mediumslateblue; color: maroon; text-align: center;}
+
+.Nav { grid-area: Nav; background-color: lightskyblue; color: yellowgreen;}
+
+.Yikes { grid-area: Yikes; background-color: tomato; color: yellow; text-align: center;}
+
+.Nicki { grid-area: Nicki; background-color: limegreen; color: firebrick;}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: magenta;
+    color: white;
+  }
+
+  .Header {
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: tomato;
+  }
+
+  .Footer {
+    font-family: "Lucida Console", Courier, monospace;
+    color: yellow;
+    background-color: limegreen;
+  }
+
+  .Nav {
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: mediumslateblue;
+  }
+
+  .Yikes {
+    font-family: "Lucida Console", Courier, monospace;
+    color: maroon;
+    background-color: lightskyblue;
+  }
+
+  .Nicki {
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: orange;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lawngreen;
+    color: white;
+  }
+
+  .Header {
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  .Footer {
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  .Nav {
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  .Yikes {
+    font-family: "Lucida Console", Courier, monospace;
+  }
+
+  .Nicki {
+    font-family: "Lucida Console", Courier, monospace;
+  }
 }

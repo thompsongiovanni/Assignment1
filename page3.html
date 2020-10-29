@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment #2 Page 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+  <body>
+    <div class="grid-container">
+      <div class="Header">
+        <header><img src ="images/mercedes.jpg"></header>
+      </div>
+      <div class="Nav">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="https://cs.columbusstate.edu/">CSU</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="Yikes">
+        <main>
+          <h2><i>Registration Form</i></h2> 
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()">
+          <h3>Personal Info</h3>
+          <label for="fname">First Name:</label><br>
+          <input type="text" id="fname" size="15" maxlength="50" placeholder="e.g., John" name="fname" value="" required><br>
+
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" size="15" maxlength="50" placeholder="e.g., Doe" name="lname" value="" required><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" placeholder="example@cpsc2125.com" name="email" required><br>
+
+          <label for="number">Phone Number:</label><br>
+          <input type="text" id="number" placeholder="e.g., 5552226789" name="number" value=""><br><br>
+
+          <label for="state">Choose a State:</label>
+            <select name="state" id="state">
+              <option value="AL">AL</option>
+              <option value="GA">GA</option>
+              <option value="FL">FL</option>
+            </select><br><br>
+
+          <label for="birthday">Birthday:</label><br>
+          <input type="date" id="birthday" name="birthday"><br><br>
+
+          <label for="username">Username:</label><br>
+          <input type="text" placeholder="e.g., thompson_giovanni" id="username" name="username" required><br>
+          <label for="pwd">Password:</label><br>
+          <input type="password" placeholder="e.g.,•••••••" id="pwd" name="pwd" required><br>
+
+          <label for="pwd">Confirm password:</label><br>
+          <input type="password" placeholder="Confirm Password" id="confirm_password" required><br><br>
+
+          <input type="submit" value="Submit">
+        </form>
+        </main>
+      </div>
+      <div class="Nicki">
+        <table id="cars">
+<tr>
+  <th>Make</th>
+  <th>Model</th>
+</tr>
+<tr>
+  <td>Ford</td>
+  <td>Focus</td>
+</tr>
+<tr>
+  <td>Toyota</td>
+  <td>Corolla</td>
+</tr>
+<tr>
+  <td>Hyundai</td>
+  <td>Elantra</td>
+</tr>
+<tr>
+  <td>Honda</td>
+  <td>Accord</td>
+</tr>
+<tr>
+  <td>Cadillac</td>
+  <td>ATS</td>
+</tr>
+</table>
+      </div>
+
+      <div class="Footer">
+        <footer>
+          <h4>Web Designer: Mercedes | 2020 | mercedes@usa.net | (500) 453-1234</h4>
+        </footer>
+      </div>
+    </div>
+
+
+    <script src="script.js">
+      function validateForm() {
+        var x = document.forms["myForm"]["pwd"].value;
+        if (x < 8) {
+          alert("Password must be at least 8 characters");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
